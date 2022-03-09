@@ -1,1 +1,25 @@
-<p>binding works!</p>
+<!-- one-way data binding -->
+
+<!-- 1) Interpolation -->
+<h1>{{title}}</h1>
+<p>{{title}} in {{course}}</p>
+
+<!-- 2) Property binding -->
+<div class="margin">
+    <img [src]="image" alt="">
+</div>
+
+<!-- 3) Event binding -->
+
+<div class="margin">
+    <button (click) = "titleChange()" class="btn-color">
+        Click here
+    </button>
+</div>
+
+<!-- Two-way Data Binding -->
+<div class="margin">
+    <input type="text" placeholder="Course name" [(ngModel)]="courseName">
+    <h2>{{courseName}}</h2>
+
+</div>

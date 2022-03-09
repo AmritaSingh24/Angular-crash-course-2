@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
+  courses = ["html","css","js"];
+  viewMode = 'map';
+
   constructor() { }
 
   ngOnInit(): void {
